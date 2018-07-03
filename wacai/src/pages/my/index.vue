@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="header">
-            <div class="userInfo">
+            <div class="userInfo" @click="toIndex">
                 <div class="userImg">
                     <open-data class="thumb" type="userAvatarUrl"></open-data>
                 </div>
@@ -11,22 +11,21 @@
                     </div>
                     <span class="live"><p>LV 7</p></span>
                 </div>
-                
                 <i class="iconfont icon-icon icon"></i>
             </div>
             <div class="youhui">
-                <div class="qian">
+                <div class="qian" @click="toIndex">
                     <span class="qianbi">金币</span>
                     <span class="jine">85</span>
                 </div>
-                <div class="quan">
+                <div class="quan" @click="toIndex">
                     <span class="qianbi">优惠券</span>
                     <span class="jine">0</span>
                 </div>
             </div>
         </div>
         <div class="contentList">
-            <div class="list">
+            <div class="list" @click="toIndex">
                 <div class="item">
                     <image src="/static/images/mall.png"/>
                     <span class="text">金币商城</span>
@@ -89,7 +88,16 @@
 
 <script>
 export default {
-    
+    data(){},
+    methods: {
+        toIndex(){
+            wx.showToast({
+            title: '代完善',
+            icon: 'success',
+            duration: 2000
+            })
+        }
+    }
 }
 </script>
 
@@ -98,11 +106,6 @@ export default {
     font-size: 30rpx;
     background: #f6f6f6;
     height: 100%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* padding: 200rpx 0; */
     box-sizing: border-box;
 }
 .header{
