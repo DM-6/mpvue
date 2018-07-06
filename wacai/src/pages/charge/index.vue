@@ -36,7 +36,59 @@
                 </button>
             </div>
         </div>
-        <bill></bill>
+        <div class="bill-content">
+            <div class="bill">
+                <div class="bill-item">
+                    <div class="bill-name">
+                        <span class="spend-type">午餐</span>
+                        <div class="spend-content">
+                            <span class="time">07-05 13:55</span>
+                            <span class="goods">面包 酸奶</span>
+                        </div>
+                    </div>
+                    <span class="price">￥12.30</span>
+                </div>
+            </div>
+            <div class="bill">
+                <div class="bill-item">
+                    <div class="bill-name">
+                        <span class="spend-type">午餐</span>
+                        <div class="spend-content">
+                            <span class="time">07-05 13:55</span>
+                            <span class="goods">面包 酸奶</span>
+                        </div>
+                    </div>
+                    <span class="price">￥12.30</span>
+                </div>
+            </div>
+            <div class="bill">
+                <div class="bill-item">
+                    <div class="bill-name">
+                        <span class="spend-type">午餐</span>
+                        <div class="spend-content">
+                            <span class="time">07-05 13:55</span>
+                            <span class="goods">面包 酸奶</span>
+                        </div>
+                    </div>
+                    <span class="price">￥12.30</span>
+                </div>
+            </div>
+            <div class="bill">
+                <div class="bill-item">
+                    <div class="bill-name">
+                        <span class="spend-type">午餐</span>
+                        <div class="spend-content">
+                            <span class="time">07-05 13:55</span>
+                            <span class="goods">面包 酸奶</span>
+                        </div>
+                    </div>
+                    <span class="price">￥12.30</span>
+                </div>
+            </div>
+        </div>
+        <div class="up">
+            <image src="/static/images/up.png"/>
+        </div>
     </div>
 </template>
 
@@ -81,7 +133,7 @@ export default {
 }
 .spend{
     margin-left: 40rpx;
-    margin-top: 50rpx;
+    margin-top: 40rpx;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +150,7 @@ export default {
 .bal{
     display: flex;
     overflow: hidden;
-    margin: 45rpx 0;
+    margin: 40rpx 0;
 }
 .income{
     width: 50%;
@@ -141,5 +193,56 @@ export default {
     justify-content: center;
     align-items: center;
     border-left: 2rpx solid #f05631;
+}
+.bill{
+    overflow: hidden;
+}
+.bill-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 40rpx;
+    background: #fff;
+    border: .5rpx solid #ececec;
+}
+.bill-name{
+    width: 500rpx;
+    margin: 12rpx 0;
+}
+.spend-type{
+    color: #757575;
+    font-size: 40rpx;
+}
+.spend-content{
+    color: #babec3;
+    font-size: 30rpx;
+    margin-top: 6rpx;
+    display: flex;
+}
+.goods{
+    width: 300rpx;
+    margin-left: 20rpx;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; 
+}
+.price{
+    color: #ff5e5b;
+    font-size: 35rpx;
+}
+.up{
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up image{
+    width: 60rpx;
+    height: 30rpx;
+    margin: 20rpx;
 }
 </style>

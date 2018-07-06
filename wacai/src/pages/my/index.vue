@@ -2,16 +2,18 @@
     <div class="container">
         <div class="header">
             <div class="userInfo" @click="toIndex">
-                <div class="userImg">
-                    <open-data class="thumb" type="userAvatarUrl"></open-data>
-                </div>
-                <div class="nameInfo">
-                    <div class="userName">
-                        <open-data class="nackname" lang="zh_CN" type="userNickName"></open-data>
+                <div class="userInfo-avatarName">
+                    <div class="userImg">
+                        <open-data class="thumb" type="userAvatarUrl"></open-data>
                     </div>
-                    <span class="live"><p>LV 7</p></span>
+                    <div class="nameInfo">
+                        <div class="userName">
+                            <open-data class="nackname" lang="zh_CN" type="userNickName"></open-data>
+                        </div>
+                        <span class="live"><p>LV 7</p></span>
+                    </div>
                 </div>
-                <i class="iconfont icon-icon icon"></i>
+                <image src="/static/images/next.png"/>
             </div>
             <div class="youhui">
                 <div class="qian" @click="toIndex">
@@ -26,60 +28,88 @@
         </div>
         <div class="contentList">
             <div class="list" @click="toIndex">
-                <div class="item">
-                    <image src="/static/images/mall.png"/>
-                    <span class="text">金币商城</span>
-                    <span class="desc">0元好礼在这里</span>
-                    <i class="iconfont icon-icon icon"></i>
+                <div class="item list-item">
+                    <div class="item-title">
+                        <image src="/static/images/mall.png"/>
+                        <span class="text">金币商城</span>
+                    </div>
+                    <div class="item-desc">
+                        <span class="desc">0元好礼在这里</span> 
+                        <image src="/static/images/next.png"/>
+                    </div>      
                 </div>
                 <div class="item">
-                    <image src="/static/images/present.png"/>
-                    <span class="text">天天挖宝</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/present.png"/>
+                        <span class="text">天天挖宝</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
                 </div>
                 <div class="item">
-                    <image src="/static/images/people.png"/>
-                    <span class="text">邀请有礼</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/people.png"/>
+                        <span class="text">邀请有礼</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
+                </div>
+                <div class="item list-item">
+                    <item class="item-title">
+                        <image src="/static/images/touzi.png"/>
+                        <span class="text">我的投资</span>
+                    </item>
+                    <div class="item-desc">
+                        <span class="desc">昨日收益</span>
+                        <span class="money">￥+0.00</span>
+                        <image src="/static/images/next.png"/>
+                    </div>
                 </div>
                 <div class="item">
-                    <image src="/static/images/touzi.png"/>
-                    <span class="text">我的投资</span>
-                    <span class="desc">昨日收益</span>
-                    <span class="money">￥+0.00</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/shequ.png"/>
+                        <span class="text">挖财社区</span>
+                    </div>
+                    <div class="item desc">
+                        <span class="desc">教你一千种赚钱的方法</span>
+                        <image src="/static/images/next.png"/>
+                    </div>
                 </div>
                 <div class="item">
-                    <image src="/static/images/shequ.png"/>
-                    <span class="text">挖财社区</span>
-                    <span class="desc">教你一千种赚钱的方法</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/rili.png"/>
+                        <span class="text"> 挖财日历</span>
+                    </div>
+                    <div class="item-desc">
+                        <span class="desc">添加提醒</span>
+                        <image src="/static/images/next.png"/>
+                    </div>
+                </div>
+                <div class="item list-item">
+                    <div class="item-title">
+                        <image src="/static/images/fenxiang.png"/>
+                        <span class="text">分享给好友</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
                 </div>
                 <div class="item">
-                    <image src="/static/images/rili.png"/>
-                    <span class="text"> 挖财日历</span>
-                    <span class="desc">添加提醒</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/brother.png"/>
+                        <span class="text">兄弟APP</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
                 </div>
                 <div class="item">
-                    <image src="/static/images/fenxiang.png"/>
-                    <span class="text">分享给好友</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/help.png"/>
+                        <span class="text"> 帮助反馈</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
                 </div>
                 <div class="item">
-                    <image src="/static/images/brother.png"/>
-                    <span class="text">兄弟APP</span>
-                    <i class="iconfont icon-icon icon"></i>
-                </div>
-                <div class="item">
-                    <image src="/static/images/help.png"/>
-                    <span class="text"> 帮助反馈</span>
-                    <i class="iconfont icon-icon icon"></i>
-                </div>
-                <div class="item">
-                    <image src="/static/images/wacai.png"/>
-                    <span class="text"> 关于挖财</span>
-                    <i class="iconfont icon-icon icon"></i>
+                    <div class="item-title">
+                        <image src="/static/images/wacai.png"/>
+                        <span class="text"> 关于挖财</span>
+                    </div>
+                    <image src="/static/images/next.png"/>
                 </div>
             </div>
         </div>
@@ -114,10 +144,21 @@ export default {
 }
 .userInfo{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 150rpx;
     overflow: hidden;
     background: #fff;
     border-bottom: 1rpx solid #ececec;
+}
+.userInfo-avatarName{
+    display: flex;
+    overflow: hidden;
+}
+.userInfo image{
+    width: 45rpx;
+    height: 45rpx;
+    margin: 10rpx;
 }
 .userImg{
     height: 100rpx;
@@ -185,32 +226,44 @@ export default {
 }
 .contentList{
     overflow: hidden;
-    padding-top: 30rpx;
+    /* padding-top: 30rpx; */
 }
-.list{
+/* .list{
     background: #fff;
-}
+} */
 .item{
     height: 100rpx;
     padding-left: 20rpx;
     font-size: 35rpx;
+    background: #fff;
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    justify-content: space-between;  
     border-bottom: 1rpx solid #ececec; 
+}
+.list-item{
+    margin-top: 40rpx;
+}
+.item-title{
+    display: flex;
+    align-items: center; 
+}
+.item-title span{
+    margin-left: 10px;
+    color: #333333;
+}
+.item-desc{
+    display: flex;
+    align-items: center; 
 }
 .item image{
     width: 45rpx;
     height: 45rpx;
     margin: 10rpx;
 }
-.text{
-    margin-left: 10px;
-    color: #333333;
-}
 .desc{
     color: #767676;
     font-size: 30rpx;
-    margin-left: 200rpx;
 }
 .money{
     color: #2ccf98;

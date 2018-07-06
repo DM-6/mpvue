@@ -14,9 +14,9 @@ export default {
     pages: [
       // 'pages/logs/main', 
       // 'pages/index/main',
-      '^pages/charge/main',
+      'pages/charge/main',
       'pages/account/main',
-      'pages/financial/main',
+      '^pages/financial/main',
       'pages/find/main',
       'pages/my/main',
     ],
